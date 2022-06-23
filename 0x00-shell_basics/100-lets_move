@@ -1,2 +1,2 @@
 #!/bin/bash 
-mv -ra*[[:upper:]] /tmp/u
+mv -ra*[[:upper:]] . /tmp/u
