@@ -3,9 +3,11 @@
 '''
 import requests
 
+
 BASE_URL = 'https://www.reddit.com'
 '''Reddit's base API URL.
 '''
+
 
 def top_ten(subreddit):
     '''Retrieves the title of the top ten posts from a given subreddit.
@@ -25,7 +27,7 @@ def top_ten(subreddit):
     res = requests.get(
         '{}/r/{}/.json?sort={}&limit={}'.format(
             BASE_URL,
-            sureddit,
+            subreddit,
             sort,
             limit
         ),
